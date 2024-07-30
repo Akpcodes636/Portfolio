@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Section from "./components/section";
@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <Section />
