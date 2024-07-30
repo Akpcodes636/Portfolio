@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Raleway, "san-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.border {
+  border-bottom: 1px solid black;
+  border-top: none; /* Ensure no other borders are affecting it */
+  border-left: none;
+  border-right: none;
+}
+
+.font {
+  font-style: italic;
+}
+
+.parallax {
+  background-attachment: fixed; /* Keep the background fixed during scroll */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+}
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker var(--animation-duration) linear infinite;
+}
+
+.ticker-content {
+  display: flex;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 5rem;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
