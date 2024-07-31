@@ -21,7 +21,7 @@ const Navbar = () => {
   const getStyles = (variant) => {
     const baseStyle = {
       position: "absolute",
-      height: "1px",
+      height: "2px",
       backgroundColor: "black",
       transition: "all 0.5s ease-in-out",
     };
@@ -47,7 +47,7 @@ const Navbar = () => {
     <div>
       <header className="flex items-center justify-between lg:px-4 w-full border-b">
         <a href="#hero">
-          <h1 className="text-3xl">Ewherhe Akpesiri</h1>
+          <h1 className="text-xl md:text-3xl">Ewherhe Akpesiri</h1>
         </a>
         <nav>
           <button

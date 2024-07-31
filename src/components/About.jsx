@@ -2,8 +2,13 @@ export default function About() {
   return (
     <>
       <section id="about" className="py-[9.6rem] border-t border-gray-200">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 px-8">
-          <div>ABOUT ME</div>
+        <div className="container mx-auto gap-10 grid grid-cols-1 md:grid-cols-[1.1fr_1fr] px-8">
+          <div>
+            <img
+              src="./src/assets/undraw_programming_re_kg9v.svg"
+              alt="picture of progeammer"
+            />
+          </div>
           <div>
             <p className="leading-9">
               Hello! I’m Akp, an enthusiastic engineer with a strong passion for
